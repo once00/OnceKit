@@ -7,10 +7,6 @@
 //
 
 #import "UIBarButtonItem+Extension.h"
-#import "UIView+Extension.h"
-
-#define iOS11 ([[UIDevice currentDevice].systemVersion doubleValue] >= 11.0)
-#define HG_WIDTH  [[UIScreen mainScreen] bounds].size.width
 
 @implementation UIBarButtonItem (Extension)
 /**
@@ -34,7 +30,6 @@
 
     // 设置尺寸
     btn.size = CGSizeMake(40, 40);
-
 //    btn.size = btn.currentImage.size;
     return [[UIBarButtonItem alloc] initWithCustomView:btn];
 }
@@ -47,10 +42,6 @@
     [btn setTitle:title forState:UIControlStateNormal];
     btn.titleLabel.font = [UIFont systemFontOfSize: 16.f];
     [btn setTitleColor:color forState:UIControlStateNormal];
-    if (iOS11) {
-        btn.contentHorizontalAlignment =UIControlContentHorizontalAlignmentRight;
-        [btn setImageEdgeInsets:UIEdgeInsetsMake(-10,0,0, -5 *HG_WIDTH /375.0)];
-    }
     btn.size = CGSizeMake(40, 40);
     // 右边添加个保存按钮
     return [[UIBarButtonItem alloc] initWithCustomView:btn];

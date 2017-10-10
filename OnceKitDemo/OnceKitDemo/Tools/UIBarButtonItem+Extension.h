@@ -8,7 +8,6 @@
 
 
 #import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
 
 /**
  *  导航item的扩展
