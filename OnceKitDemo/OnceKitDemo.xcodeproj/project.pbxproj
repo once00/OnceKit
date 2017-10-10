@@ -15,6 +15,9 @@
 		48C6542F1F8B7EA800CAAD05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C6542E1F8B7EA800CAAD05 /* main.m */; };
 		48C654391F8B7EA800CAAD05 /* OnceKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C654381F8B7EA800CAAD05 /* OnceKitDemoTests.m */; };
 		48C654441F8B7EA800CAAD05 /* OnceKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C654431F8B7EA800CAAD05 /* OnceKitDemoUITests.m */; };
+		48C6550A1F8CC37D00CAAD05 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C655051F8CC37C00CAAD05 /* UIView+Extension.m */; };
+		48C6550B1F8CC37D00CAAD05 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C655071F8CC37D00CAAD05 /* UIBarButtonItem+Extension.m */; };
+		48C6550C1F8CC37D00CAAD05 /* OENavTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C655091F8CC37D00CAAD05 /* OENavTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		48C6543F1F8B7EA800CAAD05 /* OnceKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnceKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C654431F8B7EA800CAAD05 /* OnceKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnceKitDemoUITests.m; sourceTree = "<group>"; };
 		48C654451F8B7EA800CAAD05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48C655041F8CC37C00CAAD05 /* OENavTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OENavTools.h; path = ../../OnceKit/Classes/OENavTools.h; sourceTree = "<group>"; };
+		48C655051F8CC37C00CAAD05 /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIView+Extension.m"; path = "../../OnceKit/Classes/UIView+Extension.m"; sourceTree = "<group>"; };
+		48C655061F8CC37D00CAAD05 /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIView+Extension.h"; path = "../../OnceKit/Classes/UIView+Extension.h"; sourceTree = "<group>"; };
+		48C655071F8CC37D00CAAD05 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+Extension.m"; path = "../../OnceKit/Classes/UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		48C655081F8CC37D00CAAD05 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+Extension.h"; path = "../../OnceKit/Classes/UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		48C655091F8CC37D00CAAD05 /* OENavTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OENavTools.m; path = ../../OnceKit/Classes/OENavTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,12 @@
 		48C6541E1F8B7EA800CAAD05 /* OnceKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				48C655041F8CC37C00CAAD05 /* OENavTools.h */,
+				48C655091F8CC37D00CAAD05 /* OENavTools.m */,
+				48C655081F8CC37D00CAAD05 /* UIBarButtonItem+Extension.h */,
+				48C655071F8CC37D00CAAD05 /* UIBarButtonItem+Extension.m */,
+				48C655061F8CC37D00CAAD05 /* UIView+Extension.h */,
+				48C655051F8CC37C00CAAD05 /* UIView+Extension.m */,
 				48C6541F1F8B7EA800CAAD05 /* AppDelegate.h */,
 				48C654201F8B7EA800CAAD05 /* AppDelegate.m */,
 				48C654221F8B7EA800CAAD05 /* ViewController.h */,
@@ -266,8 +281,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				48C654241F8B7EA800CAAD05 /* ViewController.m in Sources */,
+				48C6550C1F8CC37D00CAAD05 /* OENavTools.m in Sources */,
 				48C6542F1F8B7EA800CAAD05 /* main.m in Sources */,
+				48C6550A1F8CC37D00CAAD05 /* UIView+Extension.m in Sources */,
 				48C654211F8B7EA800CAAD05 /* AppDelegate.m in Sources */,
+				48C6550B1F8CC37D00CAAD05 /* UIBarButtonItem+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
