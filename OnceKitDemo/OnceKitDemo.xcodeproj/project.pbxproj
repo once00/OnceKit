@@ -75,8 +75,6 @@
 		48C654E71F8CBE8200CAAD05 /* NSString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		48C654E81F8CBE8200CAAD05 /* SDProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDProgressHUD.h; sourceTree = "<group>"; };
 		48C654E91F8CBE8200CAAD05 /* SDProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDProgressHUD.m; sourceTree = "<group>"; };
-		48C654EA1F8CBE8200CAAD05 /* sharTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sharTools.h; sourceTree = "<group>"; };
-		48C654EB1F8CBE8200CAAD05 /* sharTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sharTools.m; sourceTree = "<group>"; };
 		48C654EC1F8CBE8200CAAD05 /* systemExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = systemExtension.h; sourceTree = "<group>"; };
 		48C654ED1F8CBE8200CAAD05 /* TCExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCExtension.h; sourceTree = "<group>"; };
 		48C654EE1F8CBE8200CAAD05 /* TCExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCExtension.m; sourceTree = "<group>"; };
@@ -209,8 +207,6 @@
 				48C654E71F8CBE8200CAAD05 /* NSString+Extension.m */,
 				48C654E81F8CBE8200CAAD05 /* SDProgressHUD.h */,
 				48C654E91F8CBE8200CAAD05 /* SDProgressHUD.m */,
-				48C654EA1F8CBE8200CAAD05 /* sharTools.h */,
-				48C654EB1F8CBE8200CAAD05 /* sharTools.m */,
 				48C654EC1F8CBE8200CAAD05 /* systemExtension.h */,
 				48C654ED1F8CBE8200CAAD05 /* TCExtension.h */,
 				48C654EE1F8CBE8200CAAD05 /* TCExtension.m */,
