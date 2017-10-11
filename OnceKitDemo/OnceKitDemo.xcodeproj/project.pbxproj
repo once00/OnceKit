@@ -15,6 +15,7 @@
 		48C6542F1F8B7EA800CAAD05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C6542E1F8B7EA800CAAD05 /* main.m */; };
 		48C654391F8B7EA800CAAD05 /* OnceKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C654381F8B7EA800CAAD05 /* OnceKitDemoTests.m */; };
 		48C654441F8B7EA800CAAD05 /* OnceKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C654431F8B7EA800CAAD05 /* OnceKitDemoUITests.m */; };
+		48C655571F8E158900CAAD05 /* OnceProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C655561F8E158900CAAD05 /* OnceProgressHUD.m */; };
 		4C968D061A03FC593F1EDBB1 /* libPods-OnceKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9117829F6CA61B81792AE8 /* libPods-OnceKitDemo.a */; };
 		83978307DC666AB3ED5CBE4A /* libPods-OnceKitDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB52958B1069CBDF6FE274AF /* libPods-OnceKitDemoTests.a */; };
 		8BA05C851F00DC077F21449C /* libPods-OnceKitDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F00E7E5212CCC85B3D8F07 /* libPods-OnceKitDemoUITests.a */; };
@@ -80,6 +81,8 @@
 		48C6554F1F8DF69000CAAD05 /* UITextField+Once.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Once.m"; sourceTree = "<group>"; };
 		48C655501F8DF69000CAAD05 /* UIView+Once.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Once.h"; sourceTree = "<group>"; };
 		48C655511F8DF69000CAAD05 /* UIView+Once.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Once.m"; sourceTree = "<group>"; };
+		48C655551F8E158900CAAD05 /* OnceProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnceProgressHUD.h; sourceTree = "<group>"; };
+		48C655561F8E158900CAAD05 /* OnceProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnceProgressHUD.m; sourceTree = "<group>"; };
 		51F00E7E5212CCC85B3D8F07 /* libPods-OnceKitDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnceKitDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		924A881DC5AC1E64FC4C8F5B /* Pods-OnceKitDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnceKitDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnceKitDemoUITests/Pods-OnceKitDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A581A1653A08F117B2B9B20F /* Pods-OnceKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnceKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnceKitDemo/Pods-OnceKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -201,6 +204,8 @@
 				48C6554F1F8DF69000CAAD05 /* UITextField+Once.m */,
 				48C655501F8DF69000CAAD05 /* UIView+Once.h */,
 				48C655511F8DF69000CAAD05 /* UIView+Once.m */,
+				48C655551F8E158900CAAD05 /* OnceProgressHUD.h */,
+				48C655561F8E158900CAAD05 /* OnceProgressHUD.m */,
 			);
 			name = Classes;
 			path = ../../OnceKit/Classes;
@@ -524,6 +529,7 @@
 				48C654241F8B7EA800CAAD05 /* ViewController.m in Sources */,
 				48C6542F1F8B7EA800CAAD05 /* main.m in Sources */,
 				48C654211F8B7EA800CAAD05 /* AppDelegate.m in Sources */,
+				48C655571F8E158900CAAD05 /* OnceProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
