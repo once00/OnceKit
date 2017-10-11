@@ -83,6 +83,7 @@
 		48C655511F8DF69000CAAD05 /* UIView+Once.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Once.m"; sourceTree = "<group>"; };
 		48C655551F8E158900CAAD05 /* OnceProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnceProgressHUD.h; sourceTree = "<group>"; };
 		48C655561F8E158900CAAD05 /* OnceProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnceProgressHUD.m; sourceTree = "<group>"; };
+		48C655581F8E1A1600CAAD05 /* OnceCommonMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnceCommonMacro.h; sourceTree = "<group>"; };
 		51F00E7E5212CCC85B3D8F07 /* libPods-OnceKitDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnceKitDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		924A881DC5AC1E64FC4C8F5B /* Pods-OnceKitDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnceKitDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnceKitDemoUITests/Pods-OnceKitDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A581A1653A08F117B2B9B20F /* Pods-OnceKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnceKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnceKitDemo/Pods-OnceKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -206,6 +207,7 @@
 				48C655511F8DF69000CAAD05 /* UIView+Once.m */,
 				48C655551F8E158900CAAD05 /* OnceProgressHUD.h */,
 				48C655561F8E158900CAAD05 /* OnceProgressHUD.m */,
+				48C655581F8E1A1600CAAD05 /* OnceCommonMacro.h */,
 			);
 			name = Classes;
 			path = ../../OnceKit/Classes;

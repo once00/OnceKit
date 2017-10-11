@@ -58,7 +58,7 @@
 #define kHUDHiddenForView(View) [OnceProgressHUD hiddenForView:View]
 
 @class MBProgressHUD;
-typedef void(^myBlock)();
+typedef void(^myBlock)(void);
 typedef void(^ExecutingBlock)(MBProgressHUD *hud);
 
 typedef NS_ENUM(NSInteger, OnceProgressHUDMode) {
