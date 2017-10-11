@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SystemOnce.h"
 
 @interface UIView (Extension)
 @property (nonatomic, assign) CGFloat x;
@@ -17,4 +18,13 @@
 @property (nonatomic, assign) CGFloat height;
 @property (nonatomic, assign) CGSize size;
 @property (assign, nonatomic) CGPoint origin;
+
+///< 移除此view上的所有子视图
+- (void)removeAllSubviews;
+
+
+
++(UIView*)viewWithFrame:(TCGRect)frame
+        backGroundColor:(UIColor*)color;
+
 @end

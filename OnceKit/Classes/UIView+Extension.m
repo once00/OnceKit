@@ -108,4 +108,21 @@
     return self.frame.origin;
 }
 
+///< 移除此view上的所有子视图
+- (void)removeAllSubviews {
+    for (UIView *view in self.subviews) {
+        [view removeFromSuperview];
+    }
+    return;
+}
+
+#pragma mark-------------------------------
++(UIView*)viewWithFrame:(TCGRect)frame
+        backGroundColor:(UIColor*)color{
+    
+    UIView *view=[[UIView alloc]initWithFrame:frame];
+    view.backgroundColor=color;
+    return view;
+}
+
 @end
