@@ -9,10 +9,13 @@
 #ifndef OnceKit_h
 #define OnceKit_h
 
-#import "OENavTools.h"
-#import "UIView+Extension.h"
-#import "UIBarButtonItem+Extension.h"
-#import "OERefresh.h"
+#import "OnceNavTools.h"
+#import "UIView+Once.h"
+#import "UIBarButtonItem+Once.h"
+#import "OnceRefresh.h"
+#import "SystemOnce.h"
+#import "UIImage+Once.h"
+
 
 /*!
  *********************************************************************************

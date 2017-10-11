@@ -1,18 +1,19 @@
 //
-//  UIBarButtonItem+Extension.m
-//  当地主
+//  UIBarButtonItem+Once.m
+//  OnceKitDemo
 //
-//  Created by 尹春风 on 16/1/11.
-//  Copyright © 2016年 曹绍奇. All rights reserved.
+//  Created by 曹绍奇 on 2017/10/11.
+//  Copyright © 2017年 曹绍奇. All rights reserved.
 //
 
-#import "UIBarButtonItem+Extension.h"
-#import "UIView+Extension.h"
+#import "UIBarButtonItem+Once.h"
+#import "UIView+Once.h"
 
 #define iOS11 ([[UIDevice currentDevice].systemVersion doubleValue] >= 11.0)
 #define HG_WIDTH  [[UIScreen mainScreen] bounds].size.width
 
-@implementation UIBarButtonItem (Extension)
+@implementation UIBarButtonItem (Once)
+
 /**
  *  创建一个item
  *
@@ -27,15 +28,15 @@
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     //设置图片
-//    [btn setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
-//    [btn setImage:[UIImage imageNamed:highImage] forState:UIControlStateHighlighted];
+    //    [btn setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
+    //    [btn setImage:[UIImage imageNamed:highImage] forState:UIControlStateHighlighted];
     [btn setImage:image forState:UIControlStateNormal];
     [btn setImage:highImage forState:UIControlStateHighlighted];
-
+    
     // 设置尺寸
     btn.size = CGSizeMake(40, 40);
-
-//    btn.size = btn.currentImage.size;
+    
+    //    btn.size = btn.currentImage.size;
     return [[UIBarButtonItem alloc] initWithCustomView:btn];
 }
 

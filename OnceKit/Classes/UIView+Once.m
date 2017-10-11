@@ -1,14 +1,14 @@
 //
-//  InterestsController.m
-//  当地主
+//  UIView+Once.m
+//  OnceKitDemo
 //
-//  Created by 曹绍奇 on 15/9/18.
-//  Copyright (c) 2015年 曹绍奇. All rights reserved.
+//  Created by 曹绍奇 on 2017/10/11.
+//  Copyright © 2017年 曹绍奇. All rights reserved.
 //
 
-#import "UIView+Extension.h"
+#import "UIView+Once.h"
 
-@implementation UIView (Extension)
+@implementation UIView (Once)
 
 - (void)setX:(CGFloat)x
 {
@@ -84,8 +84,8 @@
 
 - (void)setSize:(CGSize)size
 {
-//    self.width = size.width;
-//    self.height = size.height;
+    //    self.width = size.width;
+    //    self.height = size.height;
     CGRect frame = self.frame;
     frame.size = size;
     self.frame = frame;

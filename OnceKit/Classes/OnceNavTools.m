@@ -1,13 +1,13 @@
 //
-//  OENavTools.m
-//  西北招商网云管理系统
+//  OnceNavTools.m
+//  OnceKitDemo
 //
-//  Created by 曹绍奇 on 2017/10/9.
+//  Created by 曹绍奇 on 2017/10/11.
 //  Copyright © 2017年 曹绍奇. All rights reserved.
 //
 
-#import "OENavTools.h"
-#import "UIBarButtonItem+Extension.h"
+#import "OnceNavTools.h"
+#import "UIBarButtonItem+Once.h"
 
 UIViewController * vc;
 // 自定义视图 图片路径
@@ -18,7 +18,7 @@ UIViewController * vc;
 //公共标题颜色
 #define DSTiTleCommonColor [UIColor colorWithRed:255/255.0  green:255/255.0 blue:255/255.0 alpha:1.0]
 
-@implementation OENavTools
+@implementation OnceNavTools
 
 //带左右按钮的
 + (void)NavBackButtonLeftOrRight:(UIViewController *)vw leftImg:(NSString *)imgL rigthImg:(NSString *)imgR{
@@ -60,7 +60,7 @@ UIViewController * vc;
     }
     // 设置文字属性 放在设置的文字之后才能起作用
     vw.navigationItem.leftBarButtonItem.tintColor = DSTiTleCommonColor;
-
+    
 }
 
 

@@ -1,20 +1,17 @@
 //
-//  UIBarButtonItem+Extension.h
-//  当地主
+//  UIBarButtonItem+Once.h
+//  OnceKitDemo
 //
-//  Created by 尹春风 on 16/1/11.
-//  Copyright © 2016年 曹绍奇. All rights reserved.
+//  Created by 曹绍奇 on 2017/10/11.
+//  Copyright © 2017年 曹绍奇. All rights reserved.
 //
-
 
 #import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
 
-/**
- *  导航item的扩展
- */
-@interface UIBarButtonItem (Extension)
+@interface UIBarButtonItem (Once)
+
 + (UIBarButtonItem *)itemWithTarget:(id)target action:(SEL)action image:(UIImage *)image highImage:(UIImage *)highImage;
 + (UIBarButtonItem *)itemWithTarget:(id)target action:(SEL)action title:(NSString *)title color:(UIColor *)color;
+
 
 @end

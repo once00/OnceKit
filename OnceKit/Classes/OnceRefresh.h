@@ -1,8 +1,8 @@
 //
-//  OERefresh.h
+//  OnceRefresh.h
 //  OnceKitDemo
 //
-//  Created by 曹绍奇 on 2017/10/10.
+//  Created by 曹绍奇 on 2017/10/11.
 //  Copyright © 2017年 曹绍奇. All rights reserved.
 //
 //核心类
@@ -17,7 +17,7 @@ typedef NS_ENUM(NSInteger, RefreshType) {
     RefreshTypeDouble = 2,    //支持上拉和下拉
 };
 
-@interface OERefresh : NSObject
+@interface OnceRefresh : NSObject
 
 //正常模式上拉下拉刷新
 - (void)normalModelRefresh:(UITableView *)tableView refreshType:(RefreshType)refreshType firstRefresh:(BOOL)firstRefresh timeLabHidden:(BOOL)timeLabHidden stateLabHidden:(BOOL)stateLabHidden dropDownBlock:(void(^)(void))dropDownBlock upDropBlock:(void(^)(void))upDropBlock;
@@ -29,6 +29,5 @@ typedef NS_ENUM(NSInteger, RefreshType) {
 - (void)gifScrollViewModelRefresh:(UIScrollView *)scrollview refreshType:(RefreshType)refreshType firstRefresh:(BOOL)firstRefresh timeLabHidden:(BOOL)timeLabHidden stateLabHidden:(BOOL)stateLabHidden dropDownBlock:(void(^)(void))dropDownBlock upDropBlock:(void(^)(void))upDropBlock;
 
 //后期如果有需要还要对diy的模式进行封装
-
 
 @end

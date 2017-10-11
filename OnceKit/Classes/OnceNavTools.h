@@ -1,15 +1,15 @@
 //
-//  OENavTools.h
-//  西北招商网云管理系统
+//  OnceNavTools.h
+//  OnceKitDemo
 //
-//  Created by 曹绍奇 on 2017/10/9.
+//  Created by 曹绍奇 on 2017/10/11.
 //  Copyright © 2017年 曹绍奇. All rights reserved.
 //
-//导航栏相关扩展
+
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface OENavTools : NSObject
+@interface OnceNavTools : NSObject
 
 /**
  *  带有左右两个按钮的返回
@@ -24,6 +24,5 @@
  *  @param  imgL    左边按钮图片
  */
 +(void)NavBackButtonLeft:(UIViewController *)vw leftImg:(NSString *)imgL;
-
 
 @end

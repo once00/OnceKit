@@ -1,18 +1,18 @@
 //
-//  OERefresh.m
+//  OnceRefresh.m
 //  OnceKitDemo
 //
-//  Created by 曹绍奇 on 2017/10/10.
+//  Created by 曹绍奇 on 2017/10/11.
 //  Copyright © 2017年 曹绍奇. All rights reserved.
 //
 
-#import "OERefresh.h"
+#import "OnceRefresh.h"
 #import "MJRefresh.h"
 
 #define Image(fileName) [UIImage imageNamed:fileName]
 
 
-@interface OERefresh () {
+@interface OnceRefresh () {
     NSArray *idleImages;
     NSArray *pullingImages;
     NSArray *refreshingImages;
@@ -30,7 +30,8 @@
 
 @end
 
-@implementation OERefresh
+
+@implementation OnceRefresh
 
 - (instancetype)init {
     if (self = [super init]) {
@@ -227,7 +228,5 @@
         _UpDropRefreshBlock();
     }
 }
-
-
 
 @end
