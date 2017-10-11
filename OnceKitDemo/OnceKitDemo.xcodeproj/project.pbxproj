@@ -24,7 +24,6 @@
 		48C6551D1F8DBFA400CAAD05 /* UILabel+Once.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C6551C1F8DBFA400CAAD05 /* UILabel+Once.m */; };
 		48C655201F8DC04300CAAD05 /* UIImageView+Once.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C6551F1F8DC04300CAAD05 /* UIImageView+Once.m */; };
 		48C655231F8DC0BF00CAAD05 /* UITextField+Once.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C655221F8DC0BF00CAAD05 /* UITextField+Once.m */; };
-		48C655261F8DC13A00CAAD05 /* NSData+Once.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C655251F8DC13A00CAAD05 /* NSData+Once.m */; };
 		48C655291F8DC4DF00CAAD05 /* NSMutableDictionary+Once.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C655281F8DC4DF00CAAD05 /* NSMutableDictionary+Once.m */; };
 		48C6552C1F8DC51C00CAAD05 /* NSDictionary+Once.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C6552B1F8DC51C00CAAD05 /* NSDictionary+Once.m */; };
 		4C968D061A03FC593F1EDBB1 /* libPods-OnceKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9117829F6CA61B81792AE8 /* libPods-OnceKitDemo.a */; };
@@ -88,8 +87,6 @@
 		48C6551F1F8DC04300CAAD05 /* UIImageView+Once.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Once.m"; sourceTree = "<group>"; };
 		48C655211F8DC0BF00CAAD05 /* UITextField+Once.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+Once.h"; sourceTree = "<group>"; };
 		48C655221F8DC0BF00CAAD05 /* UITextField+Once.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Once.m"; sourceTree = "<group>"; };
-		48C655241F8DC13A00CAAD05 /* NSData+Once.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Once.h"; sourceTree = "<group>"; };
-		48C655251F8DC13A00CAAD05 /* NSData+Once.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Once.m"; sourceTree = "<group>"; };
 		48C655271F8DC4DF00CAAD05 /* NSMutableDictionary+Once.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Once.h"; sourceTree = "<group>"; };
 		48C655281F8DC4DF00CAAD05 /* NSMutableDictionary+Once.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Once.m"; sourceTree = "<group>"; };
 		48C6552A1F8DC51C00CAAD05 /* NSDictionary+Once.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Once.h"; sourceTree = "<group>"; };
@@ -176,8 +173,6 @@
 				48C6551F1F8DC04300CAAD05 /* UIImageView+Once.m */,
 				48C655211F8DC0BF00CAAD05 /* UITextField+Once.h */,
 				48C655221F8DC0BF00CAAD05 /* UITextField+Once.m */,
-				48C655241F8DC13A00CAAD05 /* NSData+Once.h */,
-				48C655251F8DC13A00CAAD05 /* NSData+Once.m */,
 				48C655271F8DC4DF00CAAD05 /* NSMutableDictionary+Once.h */,
 				48C655281F8DC4DF00CAAD05 /* NSMutableDictionary+Once.m */,
 				48C6552A1F8DC51C00CAAD05 /* NSDictionary+Once.h */,
@@ -538,7 +533,6 @@
 				48C655161F8DB7F800CAAD05 /* UIButton+Once.m in Sources */,
 				48C6550A1F8CC37D00CAAD05 /* UIView+Extension.m in Sources */,
 				48C655231F8DC0BF00CAAD05 /* UITextField+Once.m in Sources */,
-				48C655261F8DC13A00CAAD05 /* NSData+Once.m in Sources */,
 				48C655291F8DC4DF00CAAD05 /* NSMutableDictionary+Once.m in Sources */,
 				48C6551D1F8DBFA400CAAD05 /* UILabel+Once.m in Sources */,
 				48C654211F8B7EA800CAAD05 /* AppDelegate.m in Sources */,
