@@ -1,15 +1,20 @@
 PODS:
   - MBProgressHUD (1.0.0)
   - MJRefresh (3.1.14)
+  - OnceKit (1.1.2):
+    - MBProgressHUD (~> 1.0.0)
+    - MJRefresh (~> 3.1.1)
 
 DEPENDENCIES:
   - MBProgressHUD (~> 1.0.0)
   - MJRefresh (~> 3.1.12)
+  - OnceKit
 
 SPEC CHECKSUMS:
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: 6642e35b3227a5447b9fd5e17c552c90196c9859
+  OnceKit: 12fd2b0a95436075033d013c112e30a850c843c1
 
-PODFILE CHECKSUM: e120372e45349728cb5bb3b6ef0f8c5d65bc81c5
+PODFILE CHECKSUM: 3ea72fd83f317c745b90666d75dadb3a7abe2a2b
 
 COCOAPODS: 1.4.0.beta.1
