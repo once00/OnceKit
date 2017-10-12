@@ -23,7 +23,6 @@
 #import "UILabel+Once.h"
 #import "UITextField+Once.h"
 #import "OnceCommonMacro.h"
-#import <MJRefresh.h>
 
 
 /*!
