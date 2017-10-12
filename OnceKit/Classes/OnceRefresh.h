@@ -19,13 +19,33 @@ typedef NS_ENUM(NSInteger, RefreshType) {
 
 @interface OnceRefresh : NSObject
 
-//正常模式上拉下拉刷新
+/**
+ *  正常模式上拉下拉刷新
+ *  @param  tableView    那个视图
+ *  @param  refreshType    下拉模式
+ *  @param  firstRefresh    首次进入是否刷新
+ *  @param  timeLabHidden    是否隐藏上次更新时间
+ *  @param  stateLabHidden    是否隐藏刷新状态label
+ */
 - (void)normalModelRefresh:(UITableView *)tableView refreshType:(RefreshType)refreshType firstRefresh:(BOOL)firstRefresh timeLabHidden:(BOOL)timeLabHidden stateLabHidden:(BOOL)stateLabHidden dropDownBlock:(void(^)(void))dropDownBlock upDropBlock:(void(^)(void))upDropBlock;
-
-//gifRefresh(tableview的刷新)
+/**
+ *  gifRefresh(tableview的刷新)
+ *  @param  tableView    那个视图
+ *  @param  refreshType    下拉模式
+ *  @param  firstRefresh    首次进入是否刷新
+ *  @param  timeLabHidden    是否隐藏上次更新时间
+ *  @param  stateLabHidden    是否隐藏刷新状态label
+ */
 - (void)gifModelRefresh:(UITableView *)tableView refreshType:(RefreshType)refreshType firstRefresh:(BOOL)firstRefresh timeLabHidden:(BOOL)timeLabHidden stateLabHidden:(BOOL)stateLabHidden dropDownBlock:(void(^)(void))dropDownBlock upDropBlock:(void(^)(void))upDropBlock;
 
-//gifRefresh(scrollview的刷新)
+/**
+ *  gifRefresh(scrollview的刷新)
+ *  @param  scrollview    那个视图
+ *  @param  refreshType    下拉模式
+ *  @param  firstRefresh    首次进入是否刷新
+ *  @param  timeLabHidden    是否隐藏上次更新时间
+ *  @param  stateLabHidden    是否隐藏刷新状态label
+ */
 - (void)gifScrollViewModelRefresh:(UIScrollView *)scrollview refreshType:(RefreshType)refreshType firstRefresh:(BOOL)firstRefresh timeLabHidden:(BOOL)timeLabHidden stateLabHidden:(BOOL)stateLabHidden dropDownBlock:(void(^)(void))dropDownBlock upDropBlock:(void(^)(void))upDropBlock;
 
 //后期如果有需要还要对diy的模式进行封装

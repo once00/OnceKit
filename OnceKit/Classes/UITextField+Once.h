@@ -10,6 +10,15 @@
 #import "SystemOnce.h"
 
 @interface UITextField (Once)
+/**
+ *  大小,内容,字体颜色,字体大小,字体位置,一行长度自适应
+ *  @param  frame    大小
+ *  @param  borderStyle    键盘模式
+ *  @param  placeholderString    提示字体
+ *  @param  placeFont    提示字体大小
+ *  @param  placeholderColor    提示字体颜色
+ *  @param  textColor    字体颜色
+ */
 +(UITextField*)textFieldWithFrame:(TCGRect)frame
                      keyboardType:(UITextBorderStyle)borderStyle
                 placeholderString:(NSString*)placeholderString

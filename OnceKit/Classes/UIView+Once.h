@@ -24,7 +24,11 @@
 - (void)removeAllSubviews;
 
 
-
+/**
+ *  大小,背景颜色
+ *  @param  frame    大小
+ *  @param  color    背景颜色
+ */
 +(UIView*)viewWithFrame:(TCGRect)frame
         backGroundColor:(UIColor*)color;
 
