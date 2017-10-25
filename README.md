@@ -5,7 +5,7 @@
 #### CocoaPods
 在 Podfile 中添加 pod 'OnceKit'。
 执行 pod install 或 pod update。
-导入 <YYCategories/YYCategories.h>。
+导入 <OnceKit.h>。
 
 ## 手动安装
 1.下载 OnceKit 文件夹内的所有内容。

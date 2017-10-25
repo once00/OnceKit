@@ -11,7 +11,7 @@
 
 @interface UIButton (Once)
 /**
- *  带有左右两个按钮的返回
+ *  大小,标题,标题颜色,标题大小,标题圆角,控件背景颜色
  *  @param  title    标题
  *  @param  titleColor    标题颜色
  *  @param  font    标题大小
@@ -27,7 +27,7 @@
                       target:(id)target selector:(SEL)selector;
 
 /**
- *  带有左右两个按钮的返回
+ *  大小,标题,标题颜色,标题大小,标题圆角,控件背景颜色,控件点击背景颜色
  *  @param  title    标题
  *  @param  titleColor    标题颜色
  *  @param  font    标题大小
@@ -45,10 +45,18 @@
                       target:(id)target selector:(SEL)selector;
 
 /**
- *  带有左右两个按钮的返回
+ *  大小,背景图片,点击方法
  *  @param  backgroundImageName    控件背景图片
  */
 +(UIButton *)buttonWithFrame:(TCGRect)frame
          BackgroundImageName:(NSString *)backgroundImageName
+                      target:(id)target selector:(SEL)selector;
+
+/**
+ *  大小,背景颜色,点击方法
+ *  @param  backgroundImageName    控件背景图片
+ */
++(UIButton *)buttonWithFrame:(TCGRect)frame
+         backGroundColor:(UIColor *)backGroundColor
                       target:(id)target selector:(SEL)selector;
 @end

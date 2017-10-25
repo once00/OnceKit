@@ -97,4 +97,15 @@
     return button;
 }
 
++(UIButton *)buttonWithFrame:(TCGRect)frame
+             backGroundColor:(UIColor *)backGroundColor
+                      target:(id)target selector:(SEL)selector{
+    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame=frame;
+    [button setBackgroundColor:backGroundColor];
+    [button addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
+    
+    return button;
+}
+
 @end

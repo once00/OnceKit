@@ -26,7 +26,7 @@ UIViewController * vc;
     //1.左边按钮
     CGFloat padding4Item = CONTROL_W(15);
     UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-    if (iOS11) {
+//    if (iOS11) {
         UIButton *leftBtn = [[UIButton alloc] initWithFrame:CGRectMake(0,0, 44,44)];
         leftBtn.contentEdgeInsets =UIEdgeInsetsMake(0, -20,0, 0);
         leftBtn.imageEdgeInsets =UIEdgeInsetsMake(0, -15,0, 0);
@@ -34,11 +34,11 @@ UIViewController * vc;
         [leftBtn addTarget:vw action:@selector(back)forControlEvents:UIControlEventTouchUpInside];
         UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
         vw.navigationItem.leftBarButtonItems =@[leftItem];
-    }else{
-        UIBarButtonItem *leftItem = [UIBarButtonItem itemWithTarget:self action:@selector(back) image:BackImageName(imgL) highImage:BackImageName(imgL)];
-        negativeSpacer.width = padding4Item;
-        vw.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:negativeSpacer, leftItem, nil];
-    }
+//    }else{
+//        UIBarButtonItem *leftItem = [UIBarButtonItem itemWithTarget:self action:@selector(back) image:BackImageName(imgL) highImage:BackImageName(imgL)];
+//        negativeSpacer.width = padding4Item;
+//        vw.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:negativeSpacer, leftItem, nil];
+//    }
     //开启ios右滑返回
     if ([vw.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
         vw.navigationController.interactivePopGestureRecognizer.delegate = nil;

@@ -25,7 +25,7 @@
 {
     UIImageView*imageView=[[UIImageView alloc]initWithFrame:frame];
     imageView.image=[UIImage imageNamed:imageName];
-    [imageView setContentMode:UIViewContentModeScaleAspectFill];
+    [imageView setContentMode:contentMode];
     imageView.clipsToBounds = YES;
     if (cornerRadiu!=0) {
         [imageView.layer setMasksToBounds:YES];

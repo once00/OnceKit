@@ -68,4 +68,24 @@
     return scaledImage;
 }
 
+/**
+ *  争对ios7以上的系统适配新的图片资源
+ *
+ *  @param imageName 图片名称
+ *
+ *  @return 新的图片
+ */
++ (UIImage *)imageWithName:(NSString *)imageName
+{
+    UIImage *newImage = nil;
+    if (iOS7) {
+        newImage = [UIImage imageNamed:[imageName stringByAppendingString:@"_os7"]];
+    }
+    if (newImage == nil) {
+        newImage = [UIImage imageNamed:imageName];
+    }
+    return newImage;
+    
+}
+
 @end

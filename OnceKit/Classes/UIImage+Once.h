@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OnceCommonMacro.h"
 
 @interface UIImage (Once)
 
@@ -43,5 +44,7 @@
  */
 +(UIImage*)imageWithImage:(UIImage*)image
              scaledToSize:(CGSize)newSize;
+
++ (UIImage *) imageWithName:(NSString *) imageName;
 
 @end
