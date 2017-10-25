@@ -1,13 +1,13 @@
 //
-//  NSData+Once.m
+//  NSDate+Once.m
 //  AFNetworking
 //
 //  Created by 曹绍奇 on 2017/10/25.
 //
 
-#import "NSData+Once.h"
+#import "NSDate+Once.h"
 
-@implementation NSData (Once)
+@implementation NSDate (Once)
 #pragma mark - 获取当前的时间
 + (NSString *)currentDateString {
     return [self currentDateStringWithFormat:@"yyyy-MM-dd HH:mm:ss"];
