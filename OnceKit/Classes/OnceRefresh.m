@@ -82,7 +82,7 @@
         //初始化并指定方法
         tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(upDropBlockAction)];
         //指定数据加载完毕的文字
-        [(MJRefreshAutoNormalFooter *)tableView.mj_footer setTitle:@"哥,这下真没了!" forState:MJRefreshStateNoMoreData];
+        [(MJRefreshAutoNormalFooter *)tableView.mj_footer setTitle:@"呀,都到底了!" forState:MJRefreshStateNoMoreData];
     }else if (refreshType == RefreshTypeDouble) {
         //上拉和下拉都持支持
         
@@ -113,7 +113,7 @@
         //初始化并指定方法
         tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(upDropBlockAction)];
         //指定数据加载完毕的文字
-        [(MJRefreshAutoNormalFooter *)tableView.mj_footer setTitle:@"哥,这下真没了!" forState:MJRefreshStateNoMoreData];
+        [(MJRefreshAutoNormalFooter *)tableView.mj_footer setTitle:@"呀,都到底了!" forState:MJRefreshStateNoMoreData];
     }
 }
 
@@ -143,7 +143,7 @@
         //初始化并指定方法
         tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(upDropBlockAction)];
         //指定数据加载完毕的文字
-        [(MJRefreshAutoNormalFooter *)tableView.mj_footer setTitle:@"哥,这下真没了!" forState:MJRefreshStateNoMoreData];
+        [(MJRefreshAutoNormalFooter *)tableView.mj_footer setTitle:@"呀,都到底了!" forState:MJRefreshStateNoMoreData];
     }else if (refreshType == RefreshTypeDouble) {
         //支持上拉和下拉加载
         self.DropDownRefreshBlock = dropDownBlock;
@@ -162,12 +162,12 @@
         //初始化并指定方法
         tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(upDropBlockAction)];
         //指定数据加载完毕的文字
-        [(MJRefreshAutoNormalFooter *)tableView.mj_footer setTitle:@"哥,这下真没了!" forState:MJRefreshStateNoMoreData];
+        [(MJRefreshAutoNormalFooter *)tableView.mj_footer setTitle:@"呀,都到底了!" forState:MJRefreshStateNoMoreData];
     }
 }
 //UIScrollView下拉
-- (void)gifScrollViewModelRefresh:(UIScrollView *)scrollview refreshType:(RefreshType)refreshType firstRefresh:(BOOL)firstRefresh timeLabHidden:(BOOL)timeLabHidden stateLabHidden:(BOOL)stateLabHidden dropDownBlock:(void(^)(void))dropDownBlock upDropBlock:(void(^)(void))upDropBlock{
-    _scrollview = scrollview;
+- (void)gifScrollViewModelRefresh:(UIScrollView *)scrollvieww refreshType:(RefreshType)refreshType firstRefresh:(BOOL)firstRefresh timeLabHidden:(BOOL)timeLabHidden stateLabHidden:(BOOL)stateLabHidden dropDownBlock:(void(^)(void))dropDownBlock upDropBlock:(void(^)(void))upDropBlock{
+    _scrollview = scrollvieww;
     
     if (refreshType == RefreshTypeDropDown) {
         //只支持下拉
@@ -179,17 +179,17 @@
         header.lastUpdatedTimeLabel.hidden = YES;
         header.lastUpdatedTimeLabel.hidden = timeLabHidden;
         header.stateLabel.hidden = stateLabHidden;
-        scrollview.mj_header = header;
+        scrollvieww.mj_header = header;
         if (firstRefresh) {
-            [scrollview.mj_header beginRefreshing];
+            [scrollvieww.mj_header beginRefreshing];
         }
     }else if (refreshType == RefreshTypeUpDrop) {
         //只支持上拉
         self.UpDropRefreshBlock = upDropBlock;
         //初始化并指定方法
-        scrollview.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(upDropBlockAction)];
+        scrollvieww.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(upDropBlockAction)];
         //指定数据加载完毕的文字
-        [(MJRefreshAutoNormalFooter *)scrollview.mj_footer setTitle:@"哥,这下真没了!" forState:MJRefreshStateNoMoreData];
+        [(MJRefreshAutoNormalFooter *)scrollvieww.mj_footer setTitle:@"呀,都到底了!" forState:MJRefreshStateNoMoreData];
     }else if (refreshType == RefreshTypeDouble) {
         //支持上拉和下拉加载
         self.DropDownRefreshBlock = dropDownBlock;
@@ -200,15 +200,15 @@
         header.lastUpdatedTimeLabel.hidden = YES;
         header.lastUpdatedTimeLabel.hidden = timeLabHidden;
         header.stateLabel.hidden = stateLabHidden;
-        scrollview.mj_header = header;
+        scrollvieww.mj_header = header;
         if (firstRefresh) {
-            [scrollview.mj_header beginRefreshing];
+            [scrollvieww.mj_header beginRefreshing];
         }
         self.UpDropRefreshBlock = upDropBlock;
         //初始化并指定方法
-        scrollview.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(upDropBlockAction)];
+        scrollvieww.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(upDropBlockAction)];
         //指定数据加载完毕的文字
-        [(MJRefreshAutoNormalFooter *)scrollview.mj_footer setTitle:@"哥,这下真没了!" forState:MJRefreshStateNoMoreData];
+        [(MJRefreshAutoNormalFooter *)scrollvieww.mj_footer setTitle:@"呀,都到底了!" forState:MJRefreshStateNoMoreData];
     }
     
 }
@@ -219,6 +219,7 @@
     if (_DropDownRefreshBlock) {
         _DropDownRefreshBlock();
         [_parameterTableView.mj_footer resetNoMoreData];
+        [_scrollview.mj_footer resetNoMoreData];
     }
 }
 
