@@ -25,8 +25,8 @@
 @property (nonatomic, copy) void(^UpDropRefreshBlock)(void);
 
 @property (nonatomic, strong) UITableView *parameterTableView;
-
 @property (nonatomic, strong) UIScrollView *scrollview;
+@property (nonatomic, strong) UICollectionView *collctionview;
 
 @end
 
@@ -214,12 +214,62 @@
 }
 
 
+//collecview下拉
+- (void)gifCollectionViewModelRefresh:(UICollectionView *)collecview refreshType:(RefreshType)refreshType firstRefresh:(BOOL)firstRefresh timeLabHidden:(BOOL)timeLabHidden stateLabHidden:(BOOL)stateLabHidden dropDownBlock:(void(^)(void))dropDownBlock upDropBlock:(void(^)(void))upDropBlock{
+    _collctionview = collecview;
+    
+    if (refreshType == RefreshTypeDropDown) {
+        //只支持下拉
+        self.DropDownRefreshBlock = dropDownBlock;
+        MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(dropDownBlockAction)];
+        [header setImages:idleImages forState:MJRefreshStateIdle];
+        [header setImages:pullingImages forState:MJRefreshStatePulling];
+        [header setImages:refreshingImages forState:MJRefreshStateRefreshing];
+        header.lastUpdatedTimeLabel.hidden = YES;
+        header.lastUpdatedTimeLabel.hidden = timeLabHidden;
+        header.stateLabel.hidden = stateLabHidden;
+        collecview.mj_header = header;
+        if (firstRefresh) {
+            [collecview.mj_header beginRefreshing];
+        }
+    }else if (refreshType == RefreshTypeUpDrop) {
+        //只支持上拉
+        self.UpDropRefreshBlock = upDropBlock;
+        //初始化并指定方法
+        collecview.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(upDropBlockAction)];
+        //指定数据加载完毕的文字
+        [(MJRefreshAutoNormalFooter *)collecview.mj_footer setTitle:@"呀,都到底了!" forState:MJRefreshStateNoMoreData];
+    }else if (refreshType == RefreshTypeDouble) {
+        //支持上拉和下拉加载
+        self.DropDownRefreshBlock = dropDownBlock;
+        MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(dropDownBlockAction)];
+        [header setImages:idleImages forState:MJRefreshStateIdle];
+        [header setImages:pullingImages forState:MJRefreshStatePulling];
+        [header setImages:refreshingImages forState:MJRefreshStateRefreshing];
+        header.lastUpdatedTimeLabel.hidden = YES;
+        header.lastUpdatedTimeLabel.hidden = timeLabHidden;
+        header.stateLabel.hidden = stateLabHidden;
+        collecview.mj_header = header;
+        if (firstRefresh) {
+            [collecview.mj_header beginRefreshing];
+        }
+        self.UpDropRefreshBlock = upDropBlock;
+        //初始化并指定方法
+        collecview.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(upDropBlockAction)];
+        //指定数据加载完毕的文字
+        [(MJRefreshAutoNormalFooter *)collecview.mj_footer setTitle:@"呀,都到底了!" forState:MJRefreshStateNoMoreData];
+    }
+    
+}
+
+
 //下拉时候触发的block
 - (void)dropDownBlockAction {
     if (_DropDownRefreshBlock) {
         _DropDownRefreshBlock();
         [_parameterTableView.mj_footer resetNoMoreData];
         [_scrollview.mj_footer resetNoMoreData];
+        [_collctionview.mj_footer resetNoMoreData];
     }
 }
 

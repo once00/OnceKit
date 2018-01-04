@@ -13,6 +13,40 @@
 
 @implementation UIButton (Once)
 
++(UIButton *)buttonWithnormalTitle:(NSString *)title
+                  normalTitleColor:(UIColor *)titleColor
+                  normalTiltleFont:(CGFloat)font
+                       cornerRadiu:(CGFloat)cornerRadiu
+                   backGroundColor:(UIColor*)backGroundColor
+             backSelectGroundColor:(UIColor*)backSelectGroundColor
+                       BorderWidth:(float)width
+                       BorderColor:(UIColor*)bordercolor
+                            target:(id)target selector:(SEL)selector{
+    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+    if (cornerRadiu!=0) {
+        [button.layer setMasksToBounds:YES];
+        [button.layer setCornerRadius:cornerRadiu];
+    }
+    [button setTitle:title forState:UIControlStateNormal];
+    UIFont *fontP ;//这个是9.0以后自带的平方字体
+    IS_IOS9 ?( fontP = [UIFont fontWithName:@"PingFangSC-Regular" size:font*SCALE] ): (fontP = [UIFont systemFontOfSize:font*SCALE]);
+    [button.titleLabel setFont:fontP];
+    [button setTitleColor:titleColor forState:UIControlStateNormal];
+    if (button.selected==YES) {
+        [button setBackgroundColor:backSelectGroundColor];
+    }else{
+        [button setBackgroundColor:backGroundColor];
+    }
+    [button.layer setBorderWidth:width];
+    [button.layer setBorderColor:bordercolor.CGColor];
+    if (target!=nil&&selector!=nil) {
+        
+        [button addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
+    }
+    
+    return button;
+}
+
 +(UIButton *)buttonWithFrame:(TCGRect)frame
                  normalTitle:(NSString *)title
             normalTitleColor:(UIColor *)titleColor

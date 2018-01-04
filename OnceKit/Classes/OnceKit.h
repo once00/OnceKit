@@ -26,6 +26,7 @@
 #import "NSString+Once.h"
 #import "OnceTime.h"
 #import "NSDate+Once.h"
+#import "NSData+Once.h"
 
 
 /*!

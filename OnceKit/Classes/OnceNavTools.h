@@ -25,4 +25,11 @@
  */
 +(void)NavBackButtonLeft:(UIViewController *)vw leftImg:(NSString *)imgL;
 
+
+/**
+ *  带有右边按钮的
+ *  @param  imgL    左边按钮图片
+ */
++(void)NavBackButtonRight:(UIViewController *)vw RightImg:(NSString *)imgL;
+
 @end

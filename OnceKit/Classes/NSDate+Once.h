@@ -10,4 +10,8 @@
 @interface NSDate (Once)
 /** 获取当前的时间 */
 + (NSString *)currentDateString;
+
+
+
+
 @end
