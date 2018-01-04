@@ -12,6 +12,20 @@
 @interface UILabel (Once)
 
 /**
+ *  内容,字体颜色,字体大小,字体位置,是否N行自适应
+ *  @param  text    内容
+ *  @param  font    字体大小
+ *  @param  textColor    字体颜色
+ *  @param  alignment    字体位置
+ *  @param  Lines    是否N行自适应
+ */
++(UILabel*)labelWithText:(NSString*)text
+                 textFont:(CGFloat)font
+                textColor:(UIColor*)textColor
+            TextAlignment:(NSTextAlignment)alignment
+            numberOfLines:(BOOL)Lines;
+
+/**
  *  大小,内容,字体颜色,字体大小,字体位置,是否N行自适应
  *  @param  frame    大小
  *  @param  text    内容

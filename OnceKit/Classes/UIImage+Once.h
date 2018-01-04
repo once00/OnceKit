@@ -47,4 +47,10 @@
 
 + (UIImage *) imageWithName:(NSString *) imageName;
 
+/**
+ *  URL转image
+ *
+ *  @param fileURL    url
+ */
++(UIImage *) getImageFromURL:(NSString *)fileURL;
 @end

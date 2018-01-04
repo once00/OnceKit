@@ -11,6 +11,29 @@
 #define IS_IOS9 ([[[UIDevice currentDevice] systemVersion] floatValue] >=9.0)
 
 @implementation UILabel (Once)
++(UILabel*)labelWithText:(NSString*)text
+                textFont:(CGFloat)font
+               textColor:(UIColor*)textColor
+           TextAlignment:(NSTextAlignment)alignment
+           numberOfLines:(BOOL)Lines{
+    UILabel*label=[[UILabel alloc]init];
+    
+    label.text=text;
+    
+    UIFont*fontP;
+    IS_IOS9 ?( fontP = [UIFont fontWithName:@"PingFangSC-Regular" size:font*SCALE] ): (fontP = [UIFont systemFontOfSize:font*SCALE]);
+    label.font=fontP;
+    label.textColor=textColor;
+    label.textAlignment=alignment;
+    
+    if (Lines==YES) {
+        label.numberOfLines = 0;
+        [label sizeToFit];
+    }
+    
+    return label;
+}
+
 +(UILabel*)labelWithFrame:(TCGRect)frame
                      text:(NSString*)text
                  textFont:(CGFloat)font
