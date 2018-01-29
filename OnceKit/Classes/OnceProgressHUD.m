@@ -16,7 +16,7 @@
 {
     
     OnceProgressHUD *hud;
-    
+    hud.tag=10086;
     if (view==nil)
     {
         hud = [OnceProgressHUD showHUDAddedTo:kkeywundowsView animated:YES];
@@ -177,6 +177,7 @@
 + (void)hidden
 {
     [OnceProgressHUD hideHUDForView:kkeywundowsView animated:YES];
+    [[[UIApplication sharedApplication].keyWindow viewWithTag:10086] removeFromSuperview];
 }
 
 

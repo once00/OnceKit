@@ -92,10 +92,16 @@
 #endif
 
 
+//将NSUserDefaults的实例化定义成宏
+#define USER_DEFAULT [NSUserDefaults standardUserDefaults]
 
 
-
-
+/**
+ *  NSNotificationCenter
+ */
+#define NSREMOVENotification [[NSNotificationCenter defaultCenter]removeObserver:self]
+#define NSPOSTNotification(name,obj,userinfo) [[NSNotificationCenter defaultCenter] postNotificationName:name object:self userInfo:userinfo]
+#define NSAddObjectrver(selectorStr,keyName) [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(selectorStr) name:keyName object:nil]
 
 
 
