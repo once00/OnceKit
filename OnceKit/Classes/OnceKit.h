@@ -27,6 +27,7 @@
 #import "OnceTime.h"
 #import "NSDate+Once.h"
 #import "NSData+Once.h"
+#import "OnceDocumentsTools.h"
 
 
 /*!
@@ -39,6 +40,11 @@
  
  项目源码地址：
  OC 版 ：https://github.com/once00/OnceKit
+ 
+ 最新更新时间：2018-1-10 【倒叙】
+ 最新Version：【Version：1.3.0】
+ 更新内容：
+ 2.OnceDocumentsTools
  
  最新更新时间：2017-10-11 【倒叙】
  最新Version：【Version：1.2.0】
