@@ -109,8 +109,6 @@
     } completionBlock:^{
         completion(hud);
     }];
-    
-    
 }
 
 
