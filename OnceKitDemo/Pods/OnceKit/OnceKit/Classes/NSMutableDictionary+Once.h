@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface NSMutableDictionary (Once)
+/**
+ *  字典转KEY Value
+ */
 -(void)DWSetObject:(id)anObject forKey:(id<NSCopying>)aKey;
 
 @end

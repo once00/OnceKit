@@ -54,7 +54,6 @@
 #define CenterOriginBInA(A,B) (A-B)/2//控件居中位置
 #define CircleDegreeToRadian(d) ((d)*M_PI)/180.0//角度转换为弧度
 #define StatusRectHH [UIApplication sharedApplication].statusBarFrame.size.height//状态栏高度
-#define TabBarRectHH [[UITabBarController alloc] init].tabBar.frame.size.height//底部tabbar高度
 #define NavRectHH self.navigationController.navigationBar.frame.size.height//标题栏高度
 #define SafeAreaTopHeight (kWJScreenHeight == 812.0 ? 88 : 64)//导航栏高度
 #define NavHeight (NavRectHH+StatusRectHH) //导航栏高度

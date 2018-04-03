@@ -16,7 +16,7 @@
 {
     
     OnceProgressHUD *hud;
-    
+    hud.tag=10086;
     if (view==nil)
     {
         hud = [OnceProgressHUD showHUDAddedTo:kkeywundowsView animated:YES];
@@ -57,7 +57,8 @@
     if (dismiss)
     {
         // 1秒之后再消失
-        [hud hide:YES afterDelay:time];
+//        [hud hide:YES afterDelay:time];
+        [hud hideAnimated:YES afterDelay:time];
     }
     
     return hud;
@@ -177,6 +178,7 @@
 + (void)hidden
 {
     [OnceProgressHUD hideHUDForView:kkeywundowsView animated:YES];
+    [[[UIApplication sharedApplication].keyWindow viewWithTag:10086] removeFromSuperview];
 }
 
 

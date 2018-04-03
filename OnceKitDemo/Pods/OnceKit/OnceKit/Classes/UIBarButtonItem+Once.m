@@ -32,7 +32,6 @@
     //    [btn setImage:[UIImage imageNamed:highImage] forState:UIControlStateHighlighted];
     [btn setImage:image forState:UIControlStateNormal];
     [btn setImage:highImage forState:UIControlStateHighlighted];
-    
     // 设置尺寸
     btn.size = CGSizeMake(40, 40);
     

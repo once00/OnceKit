@@ -23,6 +23,11 @@
 #import "UILabel+Once.h"
 #import "UITextField+Once.h"
 #import "OnceCommonMacro.h"
+#import "NSString+Once.h"
+#import "OnceTime.h"
+#import "NSDate+Once.h"
+#import "NSData+Once.h"
+#import "OnceDocumentsTools.h"
 
 
 /*!
@@ -36,20 +41,25 @@
  项目源码地址：
  OC 版 ：https://github.com/once00/OnceKit
  
- 
- 最新更新时间：2017-10-10 【倒叙】
- 最新Version：【Version：1.0.1】
+ 最新更新时间：2017-10-11 【倒叙】
+ 最新Version：【Version：1.2.0】
  更新内容：
-1.菊花加载(OnceProgressHUD)
-2.UITextField扩展(UITextField+Once)
-3.UILabel扩展(UILabel+Once)
-4.UIImageView扩展(UIImageView+Once)
-5.UIImage扩展(UIImage+Once)
-6.UIButton扩展(UIButton+Once)
-7.UIBarButtonItem扩展(UIBarButtonItem+Once)
-8.NSMutableDictionary扩展(NSMutableDictionary+Once)
-9.NSDictionary扩展(NSDictionary+Once)
-10.常用宏(OnceCommonMacro)
+ 2.NSString扩展(UITextField+Once)
+ 
+ 
+ 最新更新时间：2017-10-11 【倒叙】
+ 最新Version：【Version：1.1.6】
+ 更新内容：
+ 1.菊花加载(OnceProgressHUD)
+ 2.UITextField扩展(UITextField+Once)
+ 3.UILabel扩展(UILabel+Once)
+ 4.UIImageView扩展(UIImageView+Once)
+ 5.UIImage扩展(UIImage+Once)
+ 6.UIButton扩展(UIButton+Once)
+ 7.UIBarButtonItem扩展(UIBarButtonItem+Once)
+ 8.NSMutableDictionary扩展(NSMutableDictionary+Once)
+ 9.NSDictionary扩展(NSDictionary+Once)
+ 10.常用宏(OnceCommonMacro)
  
  
  
