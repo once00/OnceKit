@@ -57,8 +57,7 @@
     if (dismiss)
     {
         // 1秒之后再消失
-//        [hud hide:YES afterDelay:time];
-        [hud hideAnimated:YES afterDelay:time];
+        [hud hide:YES afterDelay:time];
     }
     
     return hud;
