@@ -93,7 +93,7 @@
                 WordSpace:(float)wordSpace
 {
     UILabel*label=[[UILabel alloc]initWithFrame:frame];
-
+    
     UIFont*fontP;
     IS_IOS9 ?( fontP = [UIFont fontWithName:@"PingFangSC-Regular" size:font*SCALE] ): (fontP = [UIFont systemFontOfSize:font*SCALE]);
     label.font=fontP;
@@ -234,6 +234,20 @@
     
     CGSize size = [str boundingRectWithSize:CGSizeMake(width, HEIGHT) options:NSStringDrawingUsesLineFragmentOrigin attributes:dic context:nil].size;
     return size.height;
+}
+
+
+- (void)addBezierPathsMoveToPoint:(CGPoint)movecorners LineToPoint:(CGPoint)addcorners lineWidth:(CGFloat)widh strokeColor:(UIColor *)color{
+    CGRect size = [self.text boundingRectWithSize:CGSizeMake(self.frame.size.width, self.frame.size.height) options:NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingTruncatesLastVisibleLine attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:self.font.pointSize]} context:nil];
+    CAShapeLayer *shapeLayer = [[CAShapeLayer alloc] initWithLayer:self.layer];
+    shapeLayer.lineWidth = widh;
+    shapeLayer.strokeColor = color.CGColor;
+    shapeLayer.fillColor = [UIColor clearColor].CGColor;
+    UIBezierPath *path = [[UIBezierPath alloc] init];
+    [path moveToPoint:movecorners];//开始点
+    [path addLineToPoint:addcorners];//结束点
+    shapeLayer.path = path.CGPath;
+    [self.layer addSublayer:shapeLayer];
 }
 
 @end

@@ -78,7 +78,8 @@
  */
 #define MainImageName(name) [UIImage imageNamed :name]// 自定义视图 图片路径
 
-
+/** 字符串是否为空*/
+#define kStringIsEmpty(str)     ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
 
 /**
  *  日至输出

@@ -20,10 +20,10 @@
  *  @param  Lines    是否N行自适应
  */
 +(UILabel*)labelWithText:(NSString*)text
-                 textFont:(CGFloat)font
-                textColor:(UIColor*)textColor
-            TextAlignment:(NSTextAlignment)alignment
-            numberOfLines:(BOOL)Lines;
+                textFont:(CGFloat)font
+               textColor:(UIColor*)textColor
+           TextAlignment:(NSTextAlignment)alignment
+           numberOfLines:(BOOL)Lines;
 
 /**
  *  大小,内容,字体颜色,字体大小,字体位置,是否N行自适应
@@ -55,7 +55,7 @@
                  textFont:(CGFloat)font
                 textColor:(UIColor*)textColor
             TextAlignment:(NSTextAlignment)alignment
-            WithTitle:(BOOL)Lines;
+                WithTitle:(BOOL)Lines;
 
 
 /**
@@ -94,5 +94,15 @@
 + (CGFloat)getHeightByWidth:(CGFloat)width title:(NSString *)title font:(UIFont*)font;
 
 + (CGFloat)getWidthWithTitle:(NSString *)title font:(UIFont *)font;
+
+
+/**
+ *  给label划线
+ *  @param  movecorners    开始点
+ *  @param  addcorners    结束点
+ *  @param  widh    宽度
+ *  @param  color    颜色
+ */
+- (void)addBezierPathsMoveToPoint:(CGPoint)movecorners LineToPoint:(CGPoint)addcorners lineWidth:(CGFloat)widh strokeColor:(UIColor *)color;
 
 @end
