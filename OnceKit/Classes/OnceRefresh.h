@@ -17,7 +17,19 @@ typedef NS_ENUM(NSInteger, RefreshType) {
     RefreshTypeDouble = 2,    //支持上拉和下拉
 };
 
+/*定义下拉刷新的block*/
+//typedef void(^HeaderRefBlock)();
+/*定义上拉加载更多的block*/
+//typedef void(^FooterRefBlock)();
+
 @interface OnceRefresh : NSObject
+
+/*下拉刷新的bock*/
+//@property (nonatomic,strong)HeaderRefBlock headerBlock;
+/*上拉加载的bock*/
+//@property (nonatomic,strong)FooterRefBlock FooterBlock;
+
+
 
 /**
  *  正常模式上拉下拉刷新
